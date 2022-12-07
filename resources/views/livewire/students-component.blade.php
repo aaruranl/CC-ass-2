@@ -22,7 +22,7 @@
                                 <tr>
                                     <th>Book ID</th>
                                     <th>Book Name</th>
-                                    <thBorrower Email</th>
+                                    <th>Author Email</th>
                                     <th>Book Cost</th>
                                     <th style="text-align: center;">Action</th>
                                 </tr>
@@ -89,7 +89,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-3">Borrower Email</label>
+                            <label for="email" class="col-3">Author Email</label>
                             <div class="col-9">
                                 <input type="email" id="email" class="form-control" wire:model="email">
                                 @error('email')
@@ -153,7 +153,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-3">Borrower Email</label>
+                            <label for="email" class="col-3">Author Email</label>
                             <div class="col-9">
                                 <input type="email" id="email" class="form-control" wire:model="email">
                                 @error('email')
@@ -227,7 +227,7 @@
                             </tr>
 
                             <tr>
-                                <th>Borrower Email: </th>
+                                <th>Author Email: </th>
                                 <td>{{ $view_student_email }}</td>
                             </tr>
 
