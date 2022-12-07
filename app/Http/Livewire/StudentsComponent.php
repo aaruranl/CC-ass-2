@@ -43,7 +43,7 @@ class StudentsComponent extends Component
 
         $student->save();
 
-        session()->flash('message', 'New student has been added successfully');
+        session()->flash('message', 'New book has been added successfully');
 
         $this->student_id = '';
         $this->name = '';
@@ -99,7 +99,7 @@ class StudentsComponent extends Component
 
         $student->save();
 
-        session()->flash('message', 'Student has been updated successfully');
+        session()->flash('message', 'book has been updated successfully');
 
         //For hide modal after add student success
         $this->dispatchBrowserEvent('close-modal');
@@ -118,7 +118,7 @@ class StudentsComponent extends Component
         $student = Students::where('id', $this->student_delete_id)->first();
         $student->delete();
 
-        session()->flash('message', 'Student has been deleted successfully');
+        session()->flash('message', 'book has been deleted successfully');
 
         $this->dispatchBrowserEvent('close-modal');
 
